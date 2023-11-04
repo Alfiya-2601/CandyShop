@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Candy Shop</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Candy Shop</h1>
+
+        <!-- Candy Form -->
+        <form id="candy-form" class="mb-4">
+            <div class="row">
+                <div class="col-md-4 mb-2">
+                    <input type="text" id="name" class="form-control" placeholder="Candy Name" required>
+                </div>
+                <div class="col-md-4 mb-2">
+                    <input type="text" id="description" class="form-control" placeholder="Description">
+                </div>
+                <div class="col-md-2 mb-2">
+                    <input type="number" id="price" class="form-control" placeholder="Price" required>
+                </div>
+                <div class="col-md-2 mb-2">
+                    <input type="number" id="quantity" class="form-control" placeholder="Quantity" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Candy</button>
+        </form>
+
+        <!-- Candy Table -->
+        <table class="table">
+            <tbody id="candy-list">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
